@@ -1,0 +1,15 @@
+select count(*) FROM PATENT_SPECIFICATION
+where substr(appl_no, 0, 5)='10200' --1311021
+;
+
+select count(*) FROM PATENT_SPECIFICATION
+where substr(appl_no, 0, 5)='10201' --1606587
+;
+
+select count(*) FROM PATENT_SPECIFICATION
+where substr(appl_no, 0, 5) < 10200 --689621
+;
+
+select count(*) FROM PATENT_SPECIFICATION
+where substr(appl_no, 0, 5)>'10201' --753365
+;
