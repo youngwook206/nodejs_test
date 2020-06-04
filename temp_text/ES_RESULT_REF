@@ -1,0 +1,90 @@
+{
+        "_index" : "crawl-kiet-paper",
+        "_type" : "contents",
+        "_id" : "0031dc74ed3086f8c8e2ebdb75b1719d.6e890d8ddf01125b21e6ced58228158f",
+        "_score" : 2.287682,
+        "_source" : {
+          "url" : "http://www.kiet.re.kr/kiet_web/index.jsp?sub_num=1164&state=view&tab=list&idx=55896&recom=3875&ord=0"
+        }
+      },
+      {
+        "_index" : "crawl-kiet-paper",
+        "_type" : "contents",
+        "_id" : "0031dc74ed3086f8c8e2ebdb75b1719d.dd43fbec761ef36f2ab118d4654194cb",
+        "_score" : 2.287682,
+        "_source" : {
+          "url" : "http://www.kiet.re.kr/kiet_web/index.jsp?sub_num=1164&state=view&tab=list&idx=55897&recom=3875&ord=0"
+        }
+      },
+      {
+        "_index" : "crawl-stepi-publish-science",
+        "_type" : "contents",
+        "_id" : "0a1bc21de9b76729bad656d38616bfd3.062d22fee09c932cd8347b4a8a37603b",
+        "_score" : 2.287682,
+        "_source" : {
+          "url" : "http://www.stepi.re.kr/app/publish/view.jsp?cmsCd=CM0273&categCd=A0511&ntNo=1&sort=PUBDATE&sdt=&edt=&src=&srcTemp=&opt=N&currtPg=1"
+        }
+      },
+      {
+        "_index" : "crawl-stepi-publish-science",
+        "_type" : "contents",
+        "_id" : "0a1bc21de9b76729bad656d38616bfd3.c23ae56c4621e9f84dfd4034e421ff38",
+        "_score" : 2.287682,
+        "_source" : {
+          "url" : "http://www.stepi.re.kr/app/publish/view.jsp?cmsCd=CM0273&categCd=A0511&ntNo=3&sort=PUBDATE&sdt=&edt=&src=&srcTemp=&opt=N&currtPg=1"
+        }
+      },
+      {
+        "_index" : "crawl-stepi-publish-science",
+        "_type" : "contents",
+        "_id" : "0a1bc21de9b76729bad656d38616bfd3.023d7e3bca87215aecd5f41a7c47f5b0",
+        "_score" : 2.287682,
+        "_source" : {
+          "url" : "http://www.stepi.re.kr/app/publish/view.jsp?cmsCd=CM0273&categCd=A0511&ntNo=2&sort=PUBDATE&sdt=&edt=&src=&srcTemp=&opt=N&currtPg=1"
+        }
+      },
+      {
+        "_index" : "crawl-kiet-paper",
+        "_type" : "contents",
+        "_id" : "0031dc74ed3086f8c8e2ebdb75b1719d.a4adc50873c9965c904c8670ee4a28d9",
+        "_score" : 2.1823215,
+        "_source" : {
+          "url" : "http://www.kiet.re.kr/kiet_web/index.jsp?sub_num=1164&state=view&tab=list&idx=55895&recom=3875&ord=0"
+        }
+      },
+      {
+        "_index" : "crawl-kiet-paper",
+        "_type" : "contents",
+        "_id" : "0031dc74ed3086f8c8e2ebdb75b1719d.fee19bc33adc14347e604468ef1ab7bd",
+        "_score" : 2.1823215,
+        "_source" : {
+          "url" : "http://www.kiet.re.kr/kiet_web/index.jsp?sub_num=1164&state=view&tab=list&idx=55894&recom=3875&ord=0"
+        }
+      },
+      {
+        "_index" : "crawl-stepi-etc",
+        "_type" : "contents",
+        "_id" : "8fd6e88c648c6853ed1c192898fc4df7.224c58cc92b7b9f5dbc0964c0147091c",
+        "_score" : 2.1335313,
+        "_source" : {
+          "url" : "http://www.stepi.re.kr/app/report/view.jsp?cmsCd=CM0015&categCd=A0204&ntNo=7&sort=PUBDATE&sdt=&edt=&src=&srcTemp=&opt=N&currtPg=3"
+        }
+      },
+      {
+        "_index" : "crawl-stepi-etc",
+        "_type" : "contents",
+        "_id" : "8fd6e88c648c6853ed1c192898fc4df7.934fee73d8227cfd0b8c1cf66079ec97",
+        "_score" : 2.1335313,
+        "_source" : {
+          "url" : "http://www.stepi.re.kr/app/report/view.jsp?cmsCd=CM0015&categCd=A0204&ntNo=21&sort=PUBDATE&sdt=&edt=&src=&srcTemp=&opt=N&currtPg=2"
+        }
+      },
+      {
+        "_index" : "crawl-stepi-etc",
+        "_type" : "contents",
+        "_id" : "8fd6e88c648c6853ed1c192898fc4df7.dba188bb10fe924fff7687a894aae48b",
+        "_score" : 2.1335313,
+        "_source" : {
+          "url" : "http://www.stepi.re.kr/app/report/view.jsp?cmsCd=CM0015&categCd=A0204&ntNo=14&sort=PUBDATE&sdt=&edt=&src=&srcTemp=&opt=N&currtPg=3"
+        }
+      }
