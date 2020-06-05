@@ -1,90 +1,89 @@
 {
-        "_index" : "crawl-kiet-paper",
+  "_index" : "crawl-stepi-etc",
+  "_type" : "contents",
+  "_id" : "8fd6e88c648c6853ed1c192898fc4df7.c454e89eb12bfd60756da365ce54cdcd",
+  "_score" : 1.0512933,
+  "_source" : {
+    "references" : [
+      "중국과학원 판공청, 2004"
+    ],
+    "url" : "http://www.stepi.re.kr/app/report/view.jsp?cmsCd=CM0015&categCd=A0204&ntNo=2&sort=PUBDATE&sdt=&edt=&src=&srcTemp=&opt=N&currtPg=3"
+  }
+},
+{
+  "_index" : "crawl-stepi-etc",
+  "_type" : "contents",
+  "_id" : "8fd6e88c648c6853ed1c192898fc4df7.3c90b39ba99193d26b7c8034a7149fbf",
+  "_score" : 1.0512933,
+  "_source" : {
+    "references" : [
+      "한국연구재단 www.nrf.re.kr",
+      "여성가족부 홈페이지 2017년도 자료 기준. 임다희(2017) p.80 재인용.",
+      "고용노동부 홈페이지(www.moel.go.kr)"
+    ],
+    "url" : "http://www.stepi.re.kr/app/report/view.jsp?cmsCd=CM0015&categCd=A0204&ntNo=18&sort=PUBDATE&sdt=&edt=&src=&srcTemp=&opt=N&currtPg=1"
+  }
+},
+{
+        "_index" : "crawl-kistep-yearbook",
         "_type" : "contents",
-        "_id" : "0031dc74ed3086f8c8e2ebdb75b1719d.6e890d8ddf01125b21e6ced58228158f",
-        "_score" : 2.287682,
+        "_id" : "40e9320df836968388f77e168bf522e6.fb370cdae4fad384a3f483bab5e3bc2f",
+        "_score" : 1.0281708,
         "_source" : {
-          "url" : "http://www.kiet.re.kr/kiet_web/index.jsp?sub_num=1164&state=view&tab=list&idx=55896&recom=3875&ord=0"
-        }
-      },
-      {
-        "_index" : "crawl-kiet-paper",
-        "_type" : "contents",
-        "_id" : "0031dc74ed3086f8c8e2ebdb75b1719d.dd43fbec761ef36f2ab118d4654194cb",
-        "_score" : 2.287682,
-        "_source" : {
-          "url" : "http://www.kiet.re.kr/kiet_web/index.jsp?sub_num=1164&state=view&tab=list&idx=55897&recom=3875&ord=0"
-        }
-      },
-      {
-        "_index" : "crawl-stepi-publish-science",
-        "_type" : "contents",
-        "_id" : "0a1bc21de9b76729bad656d38616bfd3.062d22fee09c932cd8347b4a8a37603b",
-        "_score" : 2.287682,
-        "_source" : {
-          "url" : "http://www.stepi.re.kr/app/publish/view.jsp?cmsCd=CM0273&categCd=A0511&ntNo=1&sort=PUBDATE&sdt=&edt=&src=&srcTemp=&opt=N&currtPg=1"
-        }
-      },
-      {
-        "_index" : "crawl-stepi-publish-science",
-        "_type" : "contents",
-        "_id" : "0a1bc21de9b76729bad656d38616bfd3.c23ae56c4621e9f84dfd4034e421ff38",
-        "_score" : 2.287682,
-        "_source" : {
-          "url" : "http://www.stepi.re.kr/app/publish/view.jsp?cmsCd=CM0273&categCd=A0511&ntNo=3&sort=PUBDATE&sdt=&edt=&src=&srcTemp=&opt=N&currtPg=1"
-        }
-      },
-      {
-        "_index" : "crawl-stepi-publish-science",
-        "_type" : "contents",
-        "_id" : "0a1bc21de9b76729bad656d38616bfd3.023d7e3bca87215aecd5f41a7c47f5b0",
-        "_score" : 2.287682,
-        "_source" : {
-          "url" : "http://www.stepi.re.kr/app/publish/view.jsp?cmsCd=CM0273&categCd=A0511&ntNo=2&sort=PUBDATE&sdt=&edt=&src=&srcTemp=&opt=N&currtPg=1"
-        }
-      },
-      {
-        "_index" : "crawl-kiet-paper",
-        "_type" : "contents",
-        "_id" : "0031dc74ed3086f8c8e2ebdb75b1719d.a4adc50873c9965c904c8670ee4a28d9",
-        "_score" : 2.1823215,
-        "_source" : {
-          "url" : "http://www.kiet.re.kr/kiet_web/index.jsp?sub_num=1164&state=view&tab=list&idx=55895&recom=3875&ord=0"
-        }
-      },
-      {
-        "_index" : "crawl-kiet-paper",
-        "_type" : "contents",
-        "_id" : "0031dc74ed3086f8c8e2ebdb75b1719d.fee19bc33adc14347e604468ef1ab7bd",
-        "_score" : 2.1823215,
-        "_source" : {
-          "url" : "http://www.kiet.re.kr/kiet_web/index.jsp?sub_num=1164&state=view&tab=list&idx=55894&recom=3875&ord=0"
-        }
-      },
-      {
-        "_index" : "crawl-stepi-etc",
-        "_type" : "contents",
-        "_id" : "8fd6e88c648c6853ed1c192898fc4df7.224c58cc92b7b9f5dbc0964c0147091c",
-        "_score" : 2.1335313,
-        "_source" : {
-          "url" : "http://www.stepi.re.kr/app/report/view.jsp?cmsCd=CM0015&categCd=A0204&ntNo=7&sort=PUBDATE&sdt=&edt=&src=&srcTemp=&opt=N&currtPg=3"
-        }
-      },
-      {
-        "_index" : "crawl-stepi-etc",
-        "_type" : "contents",
-        "_id" : "8fd6e88c648c6853ed1c192898fc4df7.934fee73d8227cfd0b8c1cf66079ec97",
-        "_score" : 2.1335313,
-        "_source" : {
-          "url" : "http://www.stepi.re.kr/app/report/view.jsp?cmsCd=CM0015&categCd=A0204&ntNo=21&sort=PUBDATE&sdt=&edt=&src=&srcTemp=&opt=N&currtPg=2"
-        }
-      },
-      {
-        "_index" : "crawl-stepi-etc",
-        "_type" : "contents",
-        "_id" : "8fd6e88c648c6853ed1c192898fc4df7.dba188bb10fe924fff7687a894aae48b",
-        "_score" : 2.1335313,
-        "_source" : {
-          "url" : "http://www.stepi.re.kr/app/report/view.jsp?cmsCd=CM0015&categCd=A0204&ntNo=14&sort=PUBDATE&sdt=&edt=&src=&srcTemp=&opt=N&currtPg=3"
+          "references" : [
+            "「‘14년도 정부 기초연구비 비중」(’14.3, 기초연구진흥협의회)",
+            "OECD(2006), The SME Financing Gap.",
+            "각 연도별 미래부 주요 연구개발사업 성과분석보고서",
+            "국가융합기술 R&D 조사분석(2014.12)",
+            "2012년 기술수준평가 - 120개 국가전략기술(미래부, 2013)",
+            "Web of Science 자료를 이용하여 재구성, 순위는 2014년 기준",
+            "Web of Science 자료를 이용하여 재구성, 순위는 2014년 기준",
+            "제2차 생명공학육성기본계획 2단계 계획(2012), 미래부",
+            "미래부, 창조경제 실현을 위한 미래부 BT 분야 투자전략(안), 2013.",
+            "미래부, 제2차 생명공학육성기본계획 2단계 계획, 2012",
+            "Frost & Sullivan, Advances in Tissue Engineering and Organ Regeneration, 2013.",
+            "Frost & Sullivan, Asia Pacific Healthcare Outlook Focus: South Korea, 2010.",
+            "생명공학정책연구센터, 2013 한국 바이오의 현황 및 소개, 2013.",
+            "미래부, 2012년도 연구개발활동조사보고서, 2013.12. - 민간투자 참고, 미래부, 2012년도 국가연구개발사업 조사·",
+            "Biotechnology Statistics Database, December 2012, OECD(T otal biotechnology R&D expenditures in the",
+            "한국보건산업진흥원, HT 융복합 신산업 발굴 및 추진전략 수립, 2014",
+            "산업통상자원부 보도자료(2014년 12월 8일, 자동차항공과)",
+            "그린카 전략포럼(2010, I&Company)",
+            "J.D. Power, STRATEGY ANALYTICS",
+            "전산재료공학 연구개발동향, 오창석, 재료연구소, 기계와 재료, 2013.5",
+            "Long-Qing Chen, PHASE-FIELD MODELS FOR MICROSTRUCTURE EVOL UTION, Annual Review of Materials",
+            "연세대학교 손일, 한국철강협회 미래철강기술포럼 보고서, 2013.",
+            "소재산업 Value Chain 분석 및 기술수준조사, 2011, 한국산업기술평가관리원",
+            "SpecialChem-April 14, 2011",
+            "Datamonitor(2012), ResearchandMarkets(2011), 비니스전략연구소",
+            "American chemical society",
+            "IDTechE",
+            "ACC(2014)",
+            "ACC(2014)",
+            "KOSIS 통계청, 광업·제조업조사 (자료갱신일 : 2014-12-31)",
+            "무역협회(2014), 무역통계정보시스템(수출입총괄, 시계열통계)",
+            "KOSIS 통계청, 광업·제조업조사 (자료갱신일 : 2014-12-31)",
+            "미래창조과학부, KISTEP 2012년도 연구개발활동조사보고서 (2013)",
+            "전기산업진흥회, 통계청, 소재부품통계, 전기산업진흥회 회원사 설문조사 추정치 전망",
+            "전기산업진흥회, 통계청, 전기산업통계, 소재부품통계",
+            "M&M 2013)",
+            "World Robotics 2014(IFR: International Federation of Robo tics, ’14.9)",
+            "한국로봇산업진흥원, ’14년 로봇산업실태조사 보고서, ’14.7월.",
+            "산업부, 제1차 지능형로봇 기본계획 ’09년, ’10년, ’11년, ’12년, ’13년 실행계획",
+            "한국전자통신연구원(2014)",
+            "2013",
+            "KISIA, KDCA, 2013 국내 정보보호산업 실태조사, ’13.12.",
+            "ICT R&D 기획-소분과보고서(정보보호분야), 미래부, ’13.9)",
+            "2013 국내 정보보호산업 실태조사, KISIA, KDCA, ’13.12",
+            "ICT R&D 기획-소분과보고서(정보보호분야), 미래 부, ’13.9",
+            "관계부처 합동, 제3차 에너지기술개발계획(’14~’23), 2014. 12.",
+            "장병탁, 2013 글로벌프론티어 기획과제 보고서, 2013.",
+            "서울대학교 인지과학연구소",
+            "EFDA(2012), A roadmap to the realisation of fusion energ y",
+            "미국 에너지부(DOE), ‘2012~2014년도 미국 에너지부 예산’",
+            "일본 문부과학성, ‘2012~2014년도 일본 문부과학성예산(안)’ 기준 작성",
+            "국가핵융합연구소(2014), 중국의 핵융합에너지개발 동향 및 시사점, Fusion Trend 3호"
+          ],
+          "url" : "https://www.k2base.re.kr/k2bbs/pds05ANDpds26/view.do?recordCountPerPage=10&pageUnit=10&pageSize=10&pageIndex=1&nttId=13320&nttId2=173160&menuNo=&viewType=&schScale=&searchCont="
         }
       }
