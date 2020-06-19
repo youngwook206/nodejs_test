@@ -1,0 +1,33 @@
+DIF_MBR(인력)
+	- 미사용 -
+	BIRTH_DE			출생 일자
+	GNDR_SE             성별 구분[DI4]
+	SCNC_TECR_REG_NO    과학 기술인 등록 번호
+	
+	- 사용여부 확인 -
+	SFDSR_CN			자기기술서 내용
+	HAN_KWD_LST     	한글 키워드 목록
+	ENG_KWD_LST     	영문 키워드 목록
+	FRRK_TECL_NM    	1 순위 기술분류 명
+	SCRK_TECL_NM    	2 순위 기술분류 명
+	THRK_TECL_NM    	3 순위 기술분류 명
+
+
+NPM_PLNN_PHRNG_OBJT(인터넷 공시 및 공청회 의견)
+	- 미사용 -
+	EMAIL_ADDR 전자우편 주소
+
+	
+NTIS_SBJT(과제 R&D)			
+	- 사용여부 확인 -
+	chf_rsch_mbr_BLNG_ORGN_NM   연구책임자소속기관명
+	chf_rsch_mbr_BSNSR_REG_NO   연구책임자사업자번호
+	chf_rsch_mbr_sex            연구책임자성별
+	chf_rsch_mbr_maj            연구책임자전공
+	chf_rsch_mbr_deg            연구책임자학위
+	
+
+
+
+
+
