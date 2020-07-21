@@ -1,0 +1,57 @@
+<HTML>
+<head>
+  <meta http-euqiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<script>
+function cf_onload(){
+  var locate=location.href;
+  var parameter=locate.split("?")[1];
+  var paramArray=parameter.split("&");
+  var getParam=new Object();
+  for(var i=0;i<paramArray.length;i++){
+    var tem=paramArray[i].split("=");
+    getParam[i] = tem[1];
+  }
+  var atchFileId=decodeURIComponent(getParam[0]);
+  var orgEdmsId=decodeURIComponent(getParam[1]);
+  var fileCrtSe=decodeURIComponent(getParam[2]);
+  var fileNm=decodeURIComponent(unescape(getParam[3]));
+  var fileTitle=decodeURIComponent(unescape(getParam[4]));
+  var regDate=decodeURIComponent(unescape(getParam[5]));
+  document.getElementById("downloadLink").innerHTML="<a onclick=\"cf_fileDownload('"+atchFileId+"','"+orgEdmsId+"','"+fileCrtSe+"')\">다운로드</a>";
+  document.getElementById("fileNm").innerHTML=fileNm;
+  document.getElementById("fileTitle").innerHTML=fileTitle;
+  document.getElementById("regDate").innerHTML=regDate;
+}
+
+function cf_fileDownload(atchFileId, orgEdmsId, fileCrtSe){
+  var str='https://itech.keit.re.kr/fileDownLoad.do?atchFileId='+encodeURIComponent(atchFileId)+'&orgEdmsId='+encodeURIComponent(orgEdmsId)+'&fileCrtSe='+encodeURIComponent(fileCrtSe)+'';
+  location.href=str;
+
+}
+</script>
+<body onLoad="cf_onload()">
+<table border=1>
+  <tr>
+    <td>파일명
+    </td>
+    <td>게시물제목
+    </td>
+    <td>등록일자
+    </td>
+    <td>다운로드
+    </td>
+  </tr>
+  <tr>
+    <td id="fileNm">
+    </td>
+    <td id="fileTitle">
+    </td>
+    <td id="regDate">
+    </td>
+    <td id="downloadLink">
+    </td>
+  </tr>
+</table>
+<input type="button" onclick="location.href='pdissuereport.html'" value="목록"/>
+</body>
