@@ -1,0 +1,281 @@
+PUT crawler-seed
+{
+  "mappings": {
+    "crawler": {
+      "properties": {
+        "@timestamp": {
+          "type": "date"
+        },
+        "@version": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "category": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          },
+          "fielddata": true
+        },
+        "description": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          },
+          "fielddata": true
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "lastrun": {
+          "type": "date"
+        },
+        "nextrun": {
+          "type": "date"
+        },
+        "optionsJSON": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "query": {
+          "properties": {
+            "missing": {
+              "properties": {
+                "field": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "reg_date": {
+          "type": "date"
+        },
+        "ruleBody": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "running": {
+          "type": "boolean"
+        },
+        "schedule": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "script": {
+          "properties": {
+            "inline": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            }
+          }
+        },
+        "target_index": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          },
+          "fielddata": true
+        },
+        "test_check": {
+          "type": "boolean"
+        },
+        "type": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+PUT crawler-seed/crawler/test_pd_report
+{
+  "nextrun": null,
+  "target_index": "test_pd_report",
+  "ruleBody": """
+{
+"id": "test_pd_report",
+"description": "PD 이슈리포트 테스트",
+"url": "http://127.0.0.1:8080/webTest/sample/list.jsp",
+"test_doc_per_page": "0",
+"test_max_page_num": "0",
+"params" : [],
+"lists": {
+  "type": "xpath",
+  "value": "//*[@id='bodyList']/table/tbody/tr",
+  "target": {
+    "type": "xpath",
+    "value": "./a",
+    "action": "javascript_onclick"
+}
+},
+"view":{
+  "title":{
+    "type":"xpath",
+    "value":"//*[@id='fileTitle']"
+  },
+  "attachments": {
+    "type": "xpath",
+    "value": "//*[@id='downloadLink']/a",
+    "filter" : {
+      "name": {
+        "extract": "text"
+      },
+      "url": {
+        "extract": "attribute_href",
+        "value" : "https://itech.keit.re.kr/fileDownLoad.do",
+        "params" : ["atchFileId", "orgEdmsId", "fileCrtSe"]
+}}}},
+"paging": {
+  "type": "xpath",
+  "value": "//*[@id='content']/div[2]/div[3]/div[1]/span/a",
+  "action": "href",
+  "ignores": "undefined"
+},
+"next_paging": {
+  "type": "xpath",
+  "value": "//*[@id='content']/div[2]/div[3]/div[1]/button[3]",
+  "action": "javascript_onclick",
+  "match": "undefined"
+}
+}
+""",
+  "description": "PD이슈리포트 테스트",
+  "type": "web",
+  "enabled": false,
+  "optionsJSON": "{}",
+  "running": false,
+  "reg_date": null,
+  "schedule": "55 16 * * *",
+  "test_check": true,
+  "category": "이슈리포트"
+}
+
+PUT crawler-seed/crawl-kdi-policy
+{
+  "nextrun": null,
+  "target_index": "crawl-kdi-policy",
+  "ruleBody": """
+{
+"id": "kdi-policy",
+"description": "KDI 연구 보고서 종류별 정책연구시리즈",
+"url": "http://www.kdi.re.kr/research/report_policy.jsp",
+"test_doc_per_page": "0",
+"test_max_page_num": "0",
+"params" : ["pub_no"],
+"lists": {
+  "type": "xpath",
+  "value": "//*[@id='content']/div[2]/div[1]/ul/li",
+  "target": {
+    "type": "xpath",
+    "value": "./div[1]/a",
+    "action": "href"
+}
+},
+"view":{
+  "writer" : {
+    "type" : "xpath",
+    "value" : "//*[@id='content']/div[1]/div[2]/div[1]/ul/li[1]/span"
+  },
+  "edition" : {
+    "type" : "xpath",
+    "value" : "//*[@id='content']/div[1]/div[2]/div[1]/ul/li[3]"
+  },
+  "keyword" : {
+    "type" : "xpath",
+    "value" : "//*[@id='content']/div[1]/div[1]/div[1]"
+  },
+  "published_date":{
+    "type":"xpath",
+    "value":"//*[@id='content']/div[1]/div[2]/div[1]/ul/li[2]"
+  },
+  "title":{
+    "type":"xpath",
+    "value":"//*[@id='content']/div[1]/div[1]/p"
+  },
+  "contents" : {
+    "type" :"xpath",
+    "value":"//*[@id='content']/div[1]/div[2]/div[2]/div"
+  },
+  "attachments": {
+    "type": "xpath",
+    "value": "//*[@id='content']/div[1]/div[2]/div[1]/a",
+    "filter" : {
+      "name": {
+        "extract": "text"
+      },
+      "url": {
+        "extract": "attribute_href",
+        "value" : "http://www.kdi.re.kr/common/report_download.jsp?",
+        "params" : ["list_no", "member_pub", "type"]
+}}}},
+"paging": {
+  "type": "xpath",
+  "value": "//*[@id='content']/div[2]/div[3]/div[1]/span/a",
+  "action": "href",
+  "ignores": "undefined"
+},
+"next_paging": {
+  "type": "xpath",
+  "value": "//*[@id='content']/div[2]/div[3]/div[1]/button[3]",
+  "action": "javascript_onclick",
+  "match": "undefined"
+}
+}
+""",
+  "description": "KDI 연구 보고서 종류별 정책연구시리즈",
+  "type": "web",
+  "enabled": false,
+  "optionsJSON": "{}",
+  "running": true,
+  "reg_date": null,
+  "schedule": "55 16 * * *",
+  "test_check": true,
+  "category": "고고학"
+}
